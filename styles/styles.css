@@ -1,0 +1,277 @@
+/* mobile */
+
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo h1 {
+  background: var(--gradiente-principal);
+  color: white;
+  padding: 0.5em;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #060a24;
+  position: relative;
+}
+
+.menu-icon::before {
+  content: "☰";
+}
+
+#menu-toggle:checked + .menu-icon::before {
+  content: "✖";
+}
+
+.menu {
+  display: none;
+  background-color: var(--bkg-color-secondary);
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: medium;
+}
+
+#menu-toggle:checked + .menu-icon + .menu {
+  display: flex;
+}
+
+/* main-section */
+.main-section {
+  background-color: var(--bkg-color-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1rem 2rem 1rem;
+
+  h1 {
+    font-size: xx-large;
+  }
+
+  .labeled {
+    text-decoration: line-through;
+  }
+
+  .blue {
+    color: blue;
+  }
+
+  .main-description {
+    padding: 1rem 0;
+  }
+
+  .button {
+    background-color: var(--button-color);
+    color: var(--text-color-main);
+    font-weight: bold;
+    padding: 1rem 4rem;
+    text-decoration: none;
+  }
+}
+
+/* podcast-section */
+.podcast-section {
+  background: var(--gradiente-secondary);
+  padding-top: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: center;
+  clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+
+  h2 {
+    width: 100%;
+    text-align: start;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: var(--text-color-secondary);
+  }
+}
+
+.podcast-container iframe {
+  width: 100%;
+  height: 152px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* about-us-section */
+.about-us-section {
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us-img {
+  width: 20rem;
+  height: auto;
+  position: relative;
+  bottom: 6rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.about-us-description {
+  position: relative;
+  bottom: 5rem;
+  width: 100%;
+  text-align: start;
+  font-size: 1.2rem;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* guests-section */
+.guests-section {
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: lighter;
+  }
+}
+
+.interviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* topics-section */
+.topics-section {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+    padding-bottom: 1rem;
+  }
+}
+
+.topics-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topic {
+  color: black;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* consultation-section */
+
+.consultation-section {
+  background: var(--gradiente-secondary);
+  clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 3rem 1rem 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    color: var(--text-color-secondary);
+  }
+
+  .button {
+    background-color: var(--button-color);
+    color: var(--text-color-main);
+    font-weight: bolder;
+    font-size: medium;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+/* footer */
+.footer {
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  font-size: medium;
+}
+
+.footer-social {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  a {
+    color: black;
+  }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Una colección de podcasts sobre diversos temas."
+    />
+    <meta name="keywords" content="podcasts, audios, episodios, shows" />
+    <meta name="author" content="Nahuel Tisera" />
+    <!-- css -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <!-- fonts/icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Space+Grotesk:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- title -->
+    <title>Podcasts</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <h1>bd</h1>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon"></label>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="#episodes">EPISODIOS</a></li>
+          <li><a href="#about-us">NOSOTROS</a></li>
+          <li><a href="#guests">ENTREVISTAS</a></li>
+          <li><a href="#topics">TÓPICOS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-section">
+        <h1>
+          Hello <span class="labeled">world</span> pale blue dot<span
+            class="blue"
+            >.</span
+          >
+        </h1>
+        <p class="main-description">
+          El portal de podcasts que explora el mundo de la programación y la
+          tecnología. Nuevos episodios, todos los jueves cada 15 días.
+        </p>
+        <a class="button" href="#episodios">CONOCÉ MÁS</a>
+      </section>
+
+      <section id="episodes" class="podcast-section">
+        <h2>Episodios</h2>
+        <div class="podcast-container">
+          <iframe
+            src="https://open.spotify.com/embed/episode/2Xepstk2KNZACoIYOczCNw?utm_source=generator"
+            allow="encrypted-media"
+            loading="lazy"
+          ></iframe>
+          <iframe
+            src="https://open.spotify.com/embed/episode/2"
+            allow="encrypted-media"
+          ></iframe>
+          <iframe
+            src="https://open.spotify.com/embed/episode/2gUYEPjl8rn5C3tVcrlgw0?utm_source=generator"
+            allow="encrypted-media"
+            loading="lazy"
+          ></iframe>
+          <iframe
+            src="https://open.spotify.com/embed/episode/5D30fqbgnqPw7uoQ0cEO9K?utm_source=generator"
+            allow="encrypted-media"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="about-us" class="about-us-section">
+        <div class="about-us-img">
+          <img src="/assets/images/phone.png" alt="Teléfono antiguo" />
+        </div>
+        <div class="about-us-description">
+          <h2>De dónde venimos</h2>
+          <p>
+            Our posturings, our imagined self-importance, the delusion that we
+            have some privileged position in the Universe, are challenged by
+            this point of pale light.
+          </p>
+          <p>
+            Our planet is a lonely speck in the great enveloping cosmic dark. In
+            our obscurity, in all this vastness, there is no hint that help will
+            come from elsewhere to save us from ourselves.
+          </p>
+        </div>
+      </section>
+
+      <section id="guests" class="guests-section">
+        <h2>Invitadas/os estelares</h2>
+        <div class="interviews-container">
+          <img src="/assets/images/grace-hopper.png" alt="Grace Hopper" />
+          <img src="/assets/images/Katie-Bouman.png" alt="Katie Bouman" />
+          <img
+            src="/assets/images/Margaret_Hamilton.png"
+            alt="Margaret Hamilton"
+          />
+          <img
+            src="/assets/images/1103_computer.png"
+            alt="Computadora Univac 1103"
+          />
+          <img src="/assets/images/Computer_operators.png" alt="Invitada 5" />
+          <img src="/assets/images/susan-kare.png" alt="Susan Kare" />
+        </div>
+      </section>
+
+      <section id="topics" class="topics-section">
+        <h2>Algunos de nuestros temas</h2>
+        <div class="topics-container">
+          <div class="topic">
+            <img src="/assets/icons/icon1.svg" alt="Trabajo remoto" />
+            <p>Trabajo remoto</p>
+          </div>
+          <div class="topic">
+            <img
+              src="/assets/icons/icon2.svg"
+              alt="Repensando la programación"
+            />
+            <p>Repensando la programación</p>
+          </div>
+          <div class="topic">
+            <img src="/assets/icons/icon3.svg" alt="Bases del código" />
+            <p>Bases del código</p>
+          </div>
+          <div class="topic">
+            <img src="/assets/icons/icon4.svg" alt="Seguridad informática" />
+            <p>Seguridad informática</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="consultation-section">
+        <h2>¿Querés las últimas novedades?</h2>
+        <a class="button" href="#episodios">ESCUCHÁ LOS EPISODIOS</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2019– Hello blue pale dot</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-spotify"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

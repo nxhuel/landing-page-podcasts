@@ -1,0 +1,25 @@
+/* Reset, tipografías, colores, utilidades generales. */
+
+:root {
+  --bkg-color-main: aliceblue;
+  --bkg-color-secondary: #0000ff;
+  --font-main: "IBMPlexSans", monospace;
+  --text-color-main: #060a24;
+  --text-color-secondary: #ffffff;
+  --gradiente-principal: linear-gradient(to right, #0000ff, #0000a3);
+  --gradiente-secondary: linear-gradient(to top, #0000a3, #0000ff);
+  --button-color: #00f3bb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+body {
+  background-color: var(--bkg-color-main);
+  color: var(--text-color-main);
+  font-size: 1.2rem;
+}
