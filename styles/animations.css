@@ -43,11 +43,11 @@
 }
 
 .menu li:hover {
-    background-color: gainsboro ;
+  background-color: gainsboro;
 }
 
 .menu li a:hover {
-    color: #00ca9b;
+  color: #00ca9b;
 }
 
 .podcast-section {
@@ -66,6 +66,26 @@
   animation: fadeIn 1.5s ease-out;
 }
 
-.footer-social a {
+/* .footer-social a {
   animation: scaleUp 0.5s ease-out infinite alternate;
+} */
+
+.footer-social a:nth-of-type(1):hover {
+  color: green;
+}
+
+.footer-social a:nth-of-type(2):hover {
+  color: blueviolet;
+}
+
+.footer-social a:nth-of-type(3):hover {
+  color: cornflowerblue;
+}
+
+.footer-social a:nth-of-type(4):hover {
+  color: blue;
+}
+
+.footer-social a:nth-of-type(5):hover {
+  color: darkcyan;
 }
