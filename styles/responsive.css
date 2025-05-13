@@ -64,7 +64,7 @@
     align-items: start;
   }
 
-  .main-section h1 {
+  .main-section h2 {
     font-size: 3rem;
     text-align: start;
     width: 100%;
@@ -161,7 +161,7 @@
     padding-left: 8rem;
     padding-right: 8rem;
     .main-description {
-      padding-right: 45rem;
+      padding-right: 15rem;
     }
   }
 
